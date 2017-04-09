@@ -21,9 +21,5 @@ After completion of this tutorial you will be able to handle:
 - Maps
 - Advanced layouts
 
-<style>
-  .body{
-    font-size: 12px !important;
-  }
-  This tutorial uses material from CS171 - Visualization Class at Harvard University: http://www.cs171.org/2016/index.html
-</style> 
+
+This tutorial uses material from CS171 - Visualization Class at Harvard University: http://www.cs171.org/2016/index.html
