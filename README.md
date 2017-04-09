@@ -12,4 +12,4 @@ After completion of this tutorial you will be able to handle:
 - Maps
 - Advanced layouts
 
-* **[Prerequisites](https://github.com/zonakostic/D3_Visualization_for_Capstone/Prerequisites/Prerequisites.md)** 
+* **[Prerequisites](https://github.com/zonakostic/D3_Visualization_for_Capstone/blob/master/Prerequisites/Prerequisites.md)** 
