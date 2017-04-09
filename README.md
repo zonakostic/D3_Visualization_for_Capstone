@@ -7,6 +7,8 @@ This tutorial will cover intermediate level techniques for visualizing the data.
 - Install a code editor:  https://www.jetbrains.com/webstorm/ 
 -  Free educational license can be obtained here: https://www.jetbrains.com/student/
 
+If you prefer, you are free to use your own IDE.
+
 <b> Prerequisites </b>
 
 * **[Prerequisites page](https://github.com/zonakostic/D3_Visualization_for_Capstone/blob/master/Prerequisites/Prerequisites.md)** 
