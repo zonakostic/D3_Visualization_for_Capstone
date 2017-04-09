@@ -1,5 +1,4 @@
-# # D3 Visualization for ac297r - CSE Capstone Project Course
-
+# D3 Visualization for ac297r (Capstone Course)
 ## Prerequisites
 
 HTML:
