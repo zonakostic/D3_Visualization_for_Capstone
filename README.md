@@ -21,4 +21,4 @@ After completion of this tutorial you will be able to handle:
 - Maps
 - Advanced layouts
 
-This tutorial uses material from CS171 Visualization Class at Harvard University: http://www.cs171.org/2016/index.html 
+<small>This tutorial uses material from CS171 - Visualization Class at Harvard University: http://www.cs171.org/2016/index.html </small>
