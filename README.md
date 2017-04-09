@@ -2,7 +2,7 @@
 
 This tutorial will cover intermediate level techniques for visualizing the data. You will learn how to effectively create, update, and manipulate with visual layouts. We assume you already know the basics of web programming and that you've had the opportunity to explore various visualizations created with "D3.js". However, in case you need to familiarize yourself with some of the concepts, please check the prerequisites listed below.
 
-Go to the [Chapters](https://github.com/zonakostic/D3_Visualization_for_Capstone/blob/master/Chapters/Chapters.md) page.
+Go to the <b>[Chapters]</b>(https://github.com/zonakostic/D3_Visualization_for_Capstone/blob/master/Chapters/Chapters.md) page.
 
 <b>WebStorm</b>
 
