@@ -1,0 +1,32 @@
+
+// 1) LOAD CSV FILE
+d3.csv("data/cities.csv", function(data){
+
+    // 2) INSPECT DATASET IN THE WEB CONSOLE
+     console.log(data)
+
+
+    // ------ START --------
+    // 3) FILTER ALL CITIES WHICH ARE PART OF THE EUROPEAN UNION
+
+
+
+
+    // 4) GET THE LENGTH OF THE DATASET AND APPEND IT TO THE WEBPAGE
+
+
+
+    // 5) PREPARE THE DATA (CONVERT NUMERICAL VALUES TO NUMBERS)
+
+
+
+    // 6) APPEND SVG CONTAINER & CIRCLES
+    // 7) USE ANONYMOUS FUNCTIONS TO ACCESS OBJECT VALUES AND TO CREATE DYNAMIC PROPERTIES
+
+
+
+    // 8) APPEND TEXT LABELS
+
+    // ------ END --------
+
+});

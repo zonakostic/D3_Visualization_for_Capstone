@@ -1,0 +1,47 @@
+
+/* ACTIVITY I */ 
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+
+/* ACTIVITY II */
+
+.world-map {
+	font-family: 'Raleway', sans-serif;
+	background-color: #82C7BC;
+	text-align: center;
+	margin: 0;
+}
+
+.world-map h1 {
+  border-bottom: 2px solid #6DB9AD;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 900px;
+  padding-bottom: 30px;
+  color: #FFEB6E;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.world-map path {
+	fill: #3D3842;
+}
+
+.world-map .airport {
+	fill: #FFEB6E;
+}
+
+.world-map .connection {
+	stroke: #FFEB6E;
+	stroke-width: 2px;
+	opacity: 0.3;
+}

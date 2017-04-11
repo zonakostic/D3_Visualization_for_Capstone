@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - Introduction to JavaScript</title>
+
+		<!-- Load CSS libraries -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+	<div class="container content">
+
+		<h2>Theme Parks, Water Parks and Museums</h2>
+		<h1>Global Attractions Attendance</h1>
+
+		<div class="user-control">
+			<div class="form-group">
+		    <label for="attraction-category">Choose Category:</label>
+		    <select id="attraction-category" class="form-control" onchange="dataFiltering()">
+				  <option value="all">All Attractions</option>
+				  <option value="Theme Park">Theme Park</option>
+				  <option value="Water Park">Water Park</option>
+				  <option value="Museum">Museum</option>
+				</select>
+		  </div>
+		</div>
+
+		<!-- Parent container of our bar chart -->
+		<div id="chart-area"></div>
+
+		<p class="source-desc">Source: TEA/AECOM 2013 Theme Index and Museum Index</p>
+
+	</div>
+	
+	  
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 Tooltips -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3-tip.js"></script>
+
+	<!-- Completed: data loading, bar-chart rendering -->
+	<script src="js/global-attractions.js"></script>
+	<script src="js/barchart.js"></script>
+
+	<script src="js/lab2.js"></script>
+	</body>
+</html>

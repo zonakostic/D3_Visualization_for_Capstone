@@ -1,0 +1,21 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #f7f7f7;
+	padding: 30px;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 40px;
+	color: #84644B;
+	margin-top: 0;
+}
+
+.d3-chart .city-label {
+	font-size: 11px;
+	text-anchor: middle;
+}
+
+.d3-chart circle {
+	fill: #AB5916;
+}

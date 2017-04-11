@@ -1,0 +1,48 @@
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 100;
+  margin-top: 50px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.container-fluid {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.browser text {
+  text-anchor: end;
+}
+
+.area {
+  opacity: 0.7;
+  clip-path: url(#clip);
+}
+.area:hover {
+  opacity: 1;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}

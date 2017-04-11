@@ -24,7 +24,7 @@
 
   slide.code_title(title = ".select()");
 
-  slide.code(title, rect1, "var svg = d3.select(\"div.output svg\")\n\n\nvar myRect = svg.select(\"rect\")\nmyRect.attr(\"width\", 100)\nmyRect.attr(\"height\", 100)\nmyRect.style(\"fill\", \"steelblue\")");
+  slide.code(title, rect1, "var svg = d3.select(\"div.output svg\")\n\n\n");
 
   slide.code(title, rect1, "var svg = d3.select(\"div.output svg\")\n\n// Chain style\nsvg.select(\"rect\")\n  .attr(\"width\", 100)\n  .attr(\"height\", 100)\n  .style(\"fill\", \"steelblue\")");
 
@@ -34,13 +34,9 @@
 
   slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nsvg.select(\"rect\")\n  .attr(\"width\", 100)\n  .attr(\"height\", 100)\n  .style(\"fill\", \"steelblue\")");
 
-  slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nsvg.selectAll(\"rect\")\n  .attr(\"width\", 100)\n  .attr(\"height\", 100)\n  .style(\"fill\", \"steelblue\")");
-
-  slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nsvg.selectAll(\"rect\")\n  .attr(\"x\", 0)\n  .attr(\"y\", function(d,i) { return i*90+50 })\n  .attr(\"width\", function(d,i) {\n      return i*150+100;\n    })\n  .attr(\"height\", 20)\n  .style(\"fill\", \"steelblue\")");
-
   slide.code_title(title = ".data()");
 
-  slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nsvg.selectAll(\"rect\")\n  .data([127, 61, 256])\n  .attr(\"x\", 0)\n  .attr(\"y\", function(d,i) { return i*90+50 })\n  .attr(\"width\", function(d,i) { return d; })\n  .attr(\"height\", 20)\n  .style(\"fill\", \"steelblue\")");
+  slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nsvg.selectAll(\"rect\")\n  .data([227, 256, 240])\n  .attr(\"x\", 0)\n  .attr(\"width\", 100)\n  .attr(\"height\", 20)\n  .style(\"fill\", \"steelblue\")");
 
   slide.code_title(title = ".enter()");
 
@@ -49,8 +45,6 @@
   slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nvar selection = svg.selectAll(\"rect\")\n  .data([127, 61, 256, 71])\n\nselection\n  .attr(\"x\", 0)\n  .attr(\"y\", function(d,i) { return i*90+50 })\n  .attr(\"width\", function(d,i) { return d; })\n  .attr(\"height\", 20)\n  .style(\"fill\", \"steelblue\")\n\nselection.enter().append(\"rect\")\n  .attr(\"x\", 10) // let's just put it somewhere\n  .attr(\"y\", 10)\n  .attr(\"width\", 30)\n  .attr(\"height\", 30)\n  .style(\"fill\", \"green\")");
 
   slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nvar selection = svg.selectAll(\"rect\")\n  .data([127, 61, 256, 71])\n\nselection\n  .attr(\"x\", 0)\n  .attr(\"y\", function(d,i) { return i*90+50 })\n  .attr(\"width\", function(d,i) { return d; })\n  .attr(\"height\", 20)\n  .style(\"fill\", \"steelblue\")\n\nselection.enter().append(\"rect\")\n  .attr(\"x\", 0)\n  .attr(\"y\", function(d,i) { return i*90+50 })\n  .attr(\"width\", function(d,i) { return d; })\n  .attr(\"height\", 20)\n  .style(\"fill\", \"steelblue\")");
-
-  slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nvar selection = svg.selectAll(\"rect\")\n  .data([127, 61, 256, 71])\n\n// Shorter\nselection.enter().append(\"rect\")\n\n// when updating the regular selection then\n// enter selection is joined in to the update\n// selection for convenience.\nselection\n  .attr(\"x\", 0)\n  .attr(\"y\", function(d,i) { return i*90+50 })\n  .attr(\"width\", function(d,i) { return d; })\n  .attr(\"height\", 20)\n  .style(\"fill\", \"steelblue\")");
 
   title += " // a common pattern";
 
@@ -64,8 +58,6 @@
 
   slide.code_title(title = ".transition()");
 
-  slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nsvg.selectAll(\"rect\")\n  .data([127, 61, 256])\n  .transition()\n  .duration(3000) // 3 seconds\n    .attr(\"x\", 0)\n    .attr(\"y\", function(d,i) { return i*90+50 })\n    .attr(\"width\", function(d,i) { return d; })\n    .attr(\"height\", 20)\n    .style(\"fill\", \"steelblue\")");
-
-  slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nvar selection = svg.selectAll(\"rect\")\n  .data([127, 61, 256, 71])\n\nselection.enter().append(\"rect\")\n  .attr(\"x\", 200)\n  .attr(\"y\", 200)\n  .attr(\"width\", 10)\n  .attr(\"height\", 10)\n  .style(\"fill\", \"red\")\n\nselection\n  .transition()\n  .duration(3000)\n    .attr(\"x\", 0)\n    .attr(\"y\", function(d,i) { return i*90+50 })\n    .attr(\"width\", function(d,i) { return d; })\n    .attr(\"height\", 20)\n    .style(\"fill\", \"steelblue\")\n    .transition()\n    .duration(3000)\n    .delay(3000)\n      .style(\"fill\", \"green\")\n      .attr(\"width\", function(d,i) {\n          return d*1.5;\n        })\n\nselection.exit()\n  .attr(\"opacity\", 1)\n  .transition()\n  .duration(3000)\n    .attr(\"opacity\", 0)\n    .remove()");
+  slide.code(title, rect3, "var svg = d3.select(\"div.output svg\")\n\nsvg.selectAll(\"rect\")\n  .data([127, 61, 256])\n  .attr(\"x\", 0)\n    .attr(\"y\", function(d,i) { return i*90+50 })\n    .attr(\"width\", function(d,i) { return d; })\n    .attr(\"height\", 20)\n    .style(\"fill\", \"steelblue\")");
 
 }).call(this);
